@@ -39,20 +39,7 @@ function listTriangularNumbers(n) {
  * @param {number} col The column number
  * @returns {string} The HTML table
  */
-function multTable(row, col) {
-    var table = "<table>";
-    var x;
-    for (var i = 1; i < col; ++i) {
-        table = table + "<tr>";
-        for (var j = 1; j < row; ++j) {
-            x = i * j;
-            table = table + "<td>" + x + "</td>";
-        }
-        table = table + "</tr>";
-    }
-    table = table + "</table>";
-    return table;
-}
+function multTable(row, col) { var table = "<table>"; var x; for (var i = 1; i < col; i++) { table = table + "<tr>"; for (var j = 1; j < row + 2; j++) { x = i * j; table = table + "<td>" + x + "</td>"; } table = table + "</tr>"; } table = table + "</table>"; return table; }
 
 /**
  * Returns n!
