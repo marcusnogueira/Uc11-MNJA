@@ -5,7 +5,7 @@ QUnit.test("Test the oddFilter function.", function (assert) {
     var a = [3, 5, 1, 6, 2, 4];
     var result = oddFilter(a);
     assert.deepEqual(result, [3, 5, 1], "We expect result to be 3, 5, 1");
-    a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    a = [1,3, 4, 5, 6, 7, 8, 9, 10, 11]
     result = oddFilter(a);
     assert.deepEqual(result, [1, 3, 5, 7, 9, 11], "We expect result to be 1, 3, 5, 7, 9, 11");
     a = [2,4,6]
